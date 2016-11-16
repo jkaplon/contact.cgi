@@ -17,6 +17,7 @@ BODY_TEXT=$(echo "${BODY_TEXT}" | tr "&" "\n")
 # Replace non-useful query string items with blankness.
 BODY_TEXT="${BODY_TEXT/Submit=Submit/''}"
 BODY_TEXT="${BODY_TEXT/_nof_param_file=FormInfo_LAYOUTFORM_Layout_13704.XML/''}"
+BODY_TEXT="${BODY_TEXT/email=/''}"
 
 # Send email with ssmtp
 cat <<EOF | ssmtp jody@kaplon.us
