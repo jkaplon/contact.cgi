@@ -20,8 +20,8 @@ BODY_TEXT="${BODY_TEXT/_nof_param_file=FormInfo_LAYOUTFORM_Layout_13704.XML/''}"
 BODY_TEXT="${BODY_TEXT/email=/''}"
 
 # Send email with ssmtp
-cat <<EOF | ssmtp jody@kaplon.us
-To: jody@kaplon.us
+cat <<EOF | ssmtp recipient@example.com
+To: recipient@example.com
 From: alertmonitorfl@gmail.com
 Subject: pc-warrants contact
 
