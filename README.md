@@ -1,8 +1,8 @@
-I hacked together this bash script to handle contact form submissions on a friend's website.
-The contact form was previoulsy using a hideously long and complex PHP script, which I wanted to avoid.
-I've never proved it, but I blame that PHP script for my frirend's previous webserver getting taken over by spammers.
-Also, if possible, I wanted to avoid the overhead of running a full email server.
+Bash script to send emails based on web contact form submissions.
+This script replaced a hideously long/complicated PHP script behind a static website.
+I was asked to move the site to a new VPS when the previous host was taken over by spammers.
+I've never proved it, but I *think* that PHP script might have been how the spammers got into the original VPS.
 
-This script and the `ssmtp` mail program have proven to be a good solution for me.
-Bash scripting is not a frequent task for me, so this script could probably benefit from some refactoring (to add environment variables, for example).
-There are also some brittle website-specific values, but at least there are comments!
+Use of the `ssmtp` mail program to send via gmail has been a good alternative to running a full email server.
+Gmail setup for this is frustratingly different each time, but should be allowed as long as google continues to allow app-specific passwords.
+On other projects I've used email forwarding services like [forwardemail.net](https://forwardemail.net).
